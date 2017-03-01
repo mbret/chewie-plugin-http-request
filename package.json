@@ -1,0 +1,30 @@
+{
+  "name": "chewie-plugin-http-request",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Maxime Bret",
+  "main": "index.js",
+  "chewie": {
+    "displayName": "HTTP Request maker",
+    "modules": [
+      {
+        "id": "taskRequest",
+        "module": "./src/task-request.js",
+        "name": "Request",
+        "type": "task",
+        "optionsConfig": [
+          {
+            "name": "request",
+            "label": "Request",
+            "type": "json",
+            "required": true
+          }
+        ]
+      }
+    ]
+  },
+  "dependencies": {
+    "lodash": "^4.17.3",
+    "request": "^2.79.0"
+  }
+}
