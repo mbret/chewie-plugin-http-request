@@ -18,7 +18,7 @@ class Module {
      * @param options
      * @param done
      */
-    run(options, done) {
+    newDemand(options, done) {
         let self = this;
         // options.request is required and of type json so we should not have to test it before
         let requestData = options.request;
