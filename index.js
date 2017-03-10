@@ -1,6 +1,8 @@
 module.exports = {
-    mount(chewie, helper, done) {
+    constructor(chewie, helper) {
         this.helper = helper;
+    }
+    mount(done) {
         return done();
     }
 };
